@@ -102,13 +102,31 @@ git checkout -b new_branch
 -- 删除指定分支
 git branch -d branch   
 
--- 查看所有分支
-git branch
+-- 查看所有分支给i他
 
 -- 合并分支，只能通过main分支合并其他子分支
 git merge branch 
 
 -- 重新命名分支，如果新分支已经存在，则需要使用-M强制重命名，否则使用-m进行重命名 
 git branch -m|-M old_branch new_branch
+
+-- 在分支下提交的文件不会在main下出现，需要切换到main，然后合并分支
+
+
+-- 分支Push和pull操作
+-- 查看本地和远程分支
+git branch -a
+
+-- 推送本地分支到远程
+git push origin branch_name
+
+-- 删除远程分支（本地分支依然保留）
+git push origin :remote_branch
+
+-- 拉取远程指定分支，并在本地创建分支
+git checkout -b local_branch origin/remote_branch
+
+-- 获取远程分支最新状态
+
 
 
