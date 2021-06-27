@@ -131,3 +131,35 @@ git checkout -b local_branch origin/remote_branch
 
 
 
+-- 多人协同开发的冲突（多人对文件开发产生的冲突）
+-- 1、先拉取代码
+git pull  -- 先解决冲突，重新提交
+
+-- 2、push上去
+git push
+
+
+
+-- 标签管理tag
+-- 新建标签默认为head
+git tag tag_name
+git tag tag_name '唯一标识'
+git tag -a v0.99 -m '先行版' '唯一标识'
+
+-- 添加标签并指定标签的描述说明
+git tag -a tag_name -m 'xxx'
+
+-- 查看所有的标签
+git tag
+
+-- 删除一个本地标签
+git tag -d tag_name
+
+-- 推送本地标签到远程
+git push origin tag_name
+
+-- 推送全部未推送过的本地标签到远程
+git push origin --tags
+
+-- 删除一个远程标签
+git push origin :refs/tags/tag_name
