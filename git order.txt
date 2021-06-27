@@ -25,7 +25,8 @@ git add 文件名
 git commit -m '备注'
 
 -- 暂存区提交的文件撤销
-git restore --staged 'file'
+git restore --staged 'file'  -- 选择性的把暂存区的数据移出
+git reset HEAD 'file'  -- 取消上一次的操作，可以取消commit，无法选择性移出文件
 
 -- 不经过暂存区直接提交
 
