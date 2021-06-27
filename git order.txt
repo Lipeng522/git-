@@ -37,9 +37,22 @@ git diff HEAD -- 文件名
 -- 查看提交日志信息
 git log  -- 查看详细信息
 git log --pretty=oneline  -- 按行展示
+git reflog -- 查看全部版本的提交日志
 
 -- 版本回退
 git reset --hard HEAD^  回退1个版本
 git reset --hard HEAD~2 回退到指定的版本
 git reset --hard '唯一标识' 回退和前进到指定版本
+
+-- 查看git 仓库的文件
+git ls-files
+
+-- 拉取本地库文件
+git checkout 'file_name'
+
+-- 文件删除
+git add + commit -- 通过提交的方式删除仓库的文件
+git rm 'file_name' -- 通过rm指定删除本地库的文件，操作目录也会删除
+
+
 
