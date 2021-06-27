@@ -76,5 +76,10 @@ git clone 'git地址' -- 克隆项目的方式下载
 git clone 'ssh地址' -- 配置了公钥之后，可以使用ssh的方式下载，速度和安全性更高
 
 -- 远程创建仓库
-git remote add origin git@github.com:Lipeng522/git-.git
+github上直接创建新的仓库
 
+-- 绑定远程仓库
+git remote add origin git@github.com:Lipeng522/git_study_note.git
+
+-- 推送到远程主干分支上
+git push -u origin main
