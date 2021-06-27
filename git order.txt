@@ -1,0 +1,24 @@
+-- 产看版本信息
+git --version
+
+-- 全局用户名配置
+git config --global user.name "用户名"
+
+-- 全局邮箱设置
+git config --global user.email "邮箱地址"
+
+-- 配置信息查询
+git config --list
+
+-- 仓库初始化，在文件夹下执行该命令，即可将该文件设置成git本地仓库
+git  init
+
+-- 仓库文件的三个状态：已修改、已提交、已暂存
+
+-- 仓库状态查看，能够看到工作目录和暂存区的文件状态
+git status
+
+-- 文件提交到暂存区，可以用“.”实现本次仓库的全部提交
+git add 文件名
+
+--  
