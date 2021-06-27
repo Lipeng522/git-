@@ -24,6 +24,15 @@ git add 文件名
 -- 提交到本地仓库
 git commit -m '备注'
 
+-- 暂存区提交的文件撤销
+git restore --staged 'file'
+
+-- 不经过暂存区直接提交
+
+
+-- 本地库和提交文件的区别
+git diff head -- 文件名
+
 -- 查看提交日志信息
 git log
 
