@@ -41,6 +41,7 @@ git diff HEAD -- 文件名
 git log  -- 查看详细信息
 git log --pretty=oneline  -- 按行展示
 git reflog -- 查看全部版本的提交日志
+git log --graph --pretty=oneline -- 图表的方式查看日志
 
 -- 版本回退
 git reset --hard HEAD^  回退1个版本
