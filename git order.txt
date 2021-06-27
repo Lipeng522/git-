@@ -65,6 +65,10 @@ ssh-keygen -C"github邮箱"
 -- 检查测试链接命令
 ssh -T git@github.com
 
+-- 本地仓库分支名称修改，新版本无master，只有main，需要保证一致
+git branch -m 'master' 'main'
+
+
 
 
 ------------------------------------------------------
@@ -83,3 +87,8 @@ git remote add origin git@github.com:Lipeng522/git_study_note.git
 
 -- 推送到远程主干分支上
 git push -u origin main
+
+-- 远程仓库属性查看
+git remote 
+
+
