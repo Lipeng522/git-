@@ -1,3 +1,6 @@
+------------------------------------------------------
+######                  git命令                  ######
+------------------------------------------------------
 -- 产看版本信息
 git --version
 
@@ -54,5 +57,24 @@ git checkout 'file_name'
 git add + commit -- 通过提交的方式删除仓库的文件
 git rm 'file_name' -- 通过rm指定删除本地库的文件，操作目录也会删除
 
+-- 生成ssh key
+ssh-keygen -t -rsa -C 'github邮箱' -- win10不行的话尝试如下命令
+ssh-keygen -C"github邮箱"
+到指定的文件夹下既可以看到产生的公私钥
 
+-- 检查测试链接命令
+ssh -T git@github.com
+
+
+
+------------------------------------------------------
+######                  github                  ######
+------------------------------------------------------
+-- 克隆github上的项目到本地
+code --> download zip.file -- 下载zip的方式
+git clone 'git地址' -- 克隆项目的方式下载
+git clone 'ssh地址' -- 配置了公钥之后，可以使用ssh的方式下载，速度和安全性更高
+
+-- 远程创建仓库
+git remote add origin git@github.com:Lipeng522/git-.git
 
